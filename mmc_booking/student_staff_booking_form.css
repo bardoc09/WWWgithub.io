@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7fb;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.header {
+    position: relative;
+    background-color: #818284;
+    color: rgb(9, 9, 9);
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+.main-container {
+  max-width: 700px;
+  background: white;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fdfdfd;
+}
+
+
+.name-id-row {
+  display: flex;
+  gap: 20px;
+}
+
+.name-id-row .form-group {
+  flex: 1;
+}
+
+.time-slots {
+  margin: 20px 0;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.slots button {
+  padding: 10px;
+  border: 1px solid #4a90e2;
+  background-color: white;
+  color: #4a90e2;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slots button:hover {
+  background-color: #e6f0ff;
+}
+
+.slots button.active {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.slots button.selected {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.submit-btn {
+    display: block;
+    width: 150px;
+    margin: 30px auto 0;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.submit-btn:hover {
+  background-color: #367bd8;
+}
+/* Hide number input spinners (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinners (Firefox) */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

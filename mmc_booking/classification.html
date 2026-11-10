@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Media Center - Classification</title>
+    <link rel="stylesheet" href="classification.css">
+</head>
+<body>
+ 
+    <header class="header">
+        <a href="dashboard.php" class="back-button" title="Back to Classification">&#8592;</a>
+        <h1>Multi Media Center</h1>
+      </header>
+      
+    <main class="main-container">
+        <!-- Student/Staff Button -->
+        <button class="classification-btn" onclick="navigateToStudent()">Student/Staff</button>
+        
+        <!-- Visitor Button --> 
+        <button class="classification-btn" onclick="navigateToVisitor()">Visitor</button>
+    </main>
+
+    <!-- Embed JavaScript -->
+    <script>
+        // Navigate to Student Booking Form
+        function navigateToStudent() {
+            window.location.href = "student_staff_booking_form.php"; // Redirect to Student/Staff Booking
+        }
+
+        // Navigate to Visitor Booking Form
+        function navigateToVisitor() {
+            window.location.href = "booking-visitor.php"; // Redirect to Visitor Booking
+        }
+    </script>
+</body>
+</html>

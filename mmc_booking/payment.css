@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #efefef;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  position: relative;
+  background-color: #818284;
+  color: rgb(9, 9, 9);
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.user-icon {
+  font-size: 24px;
+}
+
+/* Main Container */
+.main-container {
+  background: #f3f3f3;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Table */
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.payments-table thead {
+  background-color: #4e4e4e;
+  color: white;
+  text-align: left;
+}
+
+.payments-table th,
+.payments-table td {
+  padding: 12px 15px;
+  font-size: 14px;
+}
+
+.payments-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.payments-table .edit-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.payments-table .edit-link:hover {
+  text-decoration: underline;
+}
+
+.empty-row {
+  height: 40px;
+  background-color: #f8f8f8;
+}
